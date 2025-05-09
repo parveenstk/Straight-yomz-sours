@@ -97,6 +97,36 @@ ul {
     font-size: 18px;
 }
 
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.freeSugar {
+    padding: 20px;
+    border: 1.5px solid #000;
+    border-radius: 20px;
+    margin-top: 10px;
+    box-shadow: 5px 5px 0px 0px #002613FF;
+}
+
+.disFlex {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.lowSugar {
+    padding: 20px;
+    border: 1.5px solid #000;
+    border-radius: 20px;
+    margin-top: 10px;
+    box-shadow: 5px 5px 0px 0px #002613FF;
+}
+
 .inner-option {
     border-radius: 20px;
     border: 1px solid #000;
@@ -507,6 +537,7 @@ ul {
     border-radius: 8px;
     margin-top: 20px;
     font-size: 20px;
+    cursor: pointer;
 }
 
 .offerpage h3 {
@@ -629,14 +660,6 @@ p.amout del {
 
 .start .btn:hover {
     background: #F0A0C3;
-}
-
-.autoship {
-    padding: 20px;
-    border: 1.5px solid #000;
-    border-radius: 20px;
-    margin-top: 10px;
-    box-shadow: 5px 5px 0px 0px #002613FF;
 }
 
 .try-once {
@@ -1151,6 +1174,10 @@ button.accordion-button {
 
 @media screen and (max-width:767px) {
 
+    .lowSugar {
+        padding: 20px 10px;
+    }
+
     .sec-1 img {
         width: 60px;
         height: 60px;
@@ -1162,10 +1189,6 @@ button.accordion-button {
 
     .offerpage .justify-content-center.align-items-center {
         display: block !important;
-    }
-
-    .autoship {
-        padding: 20px 10px;
     }
 
     .inner-option {

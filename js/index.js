@@ -1,72 +1,67 @@
 import { useState } from './useState.js'
-import { showToast, hideToast } from './utils.js'
 
-// Save Count
-const saveCount = () => {
-    const el = document.getElementById('save-value');
-    const value = getCount() + getYomzCount();
+// hide & show lowSugar box & sugarFree box
+const lowSugarSelector = document.getElementById('lowSugar-selector');
+const sugarFreeSelector = document.getElementById('sugarFree-selector');
+const lowSugarBox = document.querySelector('.lowSugar')
+const sugarFreeBox = document.querySelector('.freeSugar')
 
-    if (value <= 0) el.textContent = `SAVE $0`;
-    else el.textContent = `SAVE $${value}0`;
-    priceTotal(value);
-}
+lowSugarSelector.addEventListener('click', () => {
+    lowSugarBox.classList.add('show');
+    sugarFreeBox.classList.remove('show');
+    sugarFreeBox.classList.add('hide');
+})
 
-// Value updation of the product & hide 
-const priceTotal = (value) => {
+sugarFreeSelector.addEventListener('click', () => {
+    sugarFreeBox.classList.add('show');
+    lowSugarBox.classList.remove('show');
+    lowSugarBox.classList.add('hide');
+})
 
-    const el1 = document.getElementById('price-total1');
-    const el2 = document.getElementById('price-total2');
+// choose offer ( Low Sugar )
+const originalPercentage = 25;
+const originalPerKidPrice = 66.99;
+const originalPacks = 28;
+const originalGummies = 168;
 
-    const calculatePrice = (basePrice) =>
-        `$${((value * basePrice) - ((value * 10) - 10)).toFixed(2)}`;
+const [getofferPrcnt, setofferPrcnt] = useState(25, 'offerPrcnt');
+const [getPricePerKid, setPricePerKid] = useState(50.24, 'price-perKid');
+const [getPricePerDay, setPricePerDay] = useState(1.79, 'price-perDay');
+const [getPacks, setPacks] = useState(28, 'perPack');
+const [getPerPackGummies, setPerPackGummies] = useState(168, 'perPack-gummies')
 
-    const shouldShow = value > 0;
+const kidsSelector = document.getElementsByName('btnradio');
+kidsSelector.forEach(selector => {
+    selector.addEventListener('click', (e) => {
+        const val = +e.target.value;
+        setofferPrcnt(originalPercentage - 1 + val)
+        setPricePerKid((originalPerKidPrice - ((getofferPrcnt() / 100) * originalPerKidPrice)).toFixed(2));
+        setPricePerDay((getPricePerKid() / 28).toFixed(2));
+        setPacks(originalPacks * val)
+        setPerPackGummies(originalGummies * val);
+    })
+})
 
-    [el1, el2].forEach((el, index) => {
-        if (!el) return;
-        el.style.display = shouldShow ? 'block' : 'none';
-        if (shouldShow) {
-            const basePrice = index === 0 ? 49 : 59;
-            el.textContent = calculatePrice(basePrice);
-        }
+// choose offer ( Sugar Free )
+const originalPercentage2 = 25;
+const originalPerKidPrice2 = 66.99;
+const originalPacks2 = 28;
+const originalGummies2 = 168;
+
+const [getofferPrcnt2, setofferPrcnt2] = useState(25, 'offerPrcnt2');
+const [getPricePerKid2, setPricePerKid2] = useState(50.24, 'price-perKid2');
+const [getPricePerDay2, setPricePerDay2] = useState(1.79, 'price-perDay2');
+const [getPacks2, setPacks2] = useState(28, 'perPack2');
+const [getPerPackGummies2, setPerPackGummies2] = useState(168, 'perPack-gummies2');
+
+const kidsSelector2 = document.getElementsByName('btnradio2');
+kidsSelector2.forEach(selector => {
+    selector.addEventListener('click', (e) => {
+        const val = +e.target.value;
+        setofferPrcnt2(originalPercentage2 - 1 + val);
+        setPricePerKid2((originalPerKidPrice2 - ((getofferPrcnt2() / 100) * originalPerKidPrice2)).toFixed(2));
+        setPricePerDay2((getPricePerKid2() / 28).toFixed(2));
+        setPacks2(originalPacks2 * val);
+        setPerPackGummies2(originalGummies2 * val);
     });
-};
-
-// OG Gummies Count
-const [getCount, setCount] = useState(1, 'gummis-count');
-
-// Yomz Sours Count
-const [getYomzCount, setYomzCount] = useState(0, 'yomz-count');
-
-const checkQty = () => {
-    const value = getCount() + getYomzCount();
-    if (value >= 100) {
-        showToast();
-        return false
-    } else {
-        hideToast();
-        return true
-    };
-};
-
-document.getElementById('gummis-increment').addEventListener('click', () => {
-    if (!checkQty()) return;
-    setCount(getCount() + 1);
-    saveCount();
-});
-document.getElementById('gummis-decrement').addEventListener('click', () => {
-    if (getCount() <= 0) return
-    setCount(getCount() - 1);
-    saveCount();
-});
-
-document.getElementById('yomz-increment').addEventListener('click', () => {
-    if (!checkQty()) return;
-    setYomzCount(getYomzCount() + 1);
-    saveCount();
-});
-document.getElementById('yomz-decrement').addEventListener('click', () => {
-    if (getYomzCount() <= 0) return
-    setYomzCount(getYomzCount() - 1);
-    saveCount();
 });

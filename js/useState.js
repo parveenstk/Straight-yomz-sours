@@ -9,7 +9,8 @@ export function useState(initialValue, renderTarget) {
             renderTarget(_val);
         } else if (typeof renderTarget === 'string') {
             const el = document.getElementById(renderTarget);
-            if (el) el.textContent = el.textContent.replace(/\d+$/, _val);
+            // if (el) el.textContent = el.textContent.replace(/\d+$/, _val);
+            if (el) el.textContent = _val
         }
     };
 

@@ -458,48 +458,57 @@
                         <!-- Low Sugar -->
                         <div class="tabs flex-fill w-100">
                            <input type="radio" id="radio1" name="radios" value="low-sugar" checked>
-                           <label for="radio1" class="d-flex justify-content-center left-side">Low Sugar</label>
+                           <label for="radio1" id="lowSugar-selector"
+                              class="d-flex justify-content-center left-side">Low Sugar</label>
                         </div>
                         <!-- Sugar-Free -->
                         <div class="tabs flex-fill w-100">
                            <input type="radio" id="radio2" name="radios" value="sugar-free">
-                           <label for="radio2" class="d-flex justify-content-center right-side">Sugar-Free</label>
+                           <label for="radio2" id="sugarFree-selector"
+                              class="d-flex justify-content-center right-side">Sugar-Free</label>
                         </div>
                      </div>
-                     <div class="autoship">
+
+                     <!-- Low Sugar Box -->
+                     <div class="lowSugar">
                         <h4>AutoShip & Save</h4>
                         <h3>How many kids?</h3>
-
                         <div class="mounth-tabs">
-
                            <div class="btn-group nav-fill w-100" role="group">
-                              <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off"
-                                 checked>
+                              <input type="radio" class="btn-check" name="btnradio" value="1" id="btnradio1"
+                                 autocomplete="off" checked>
                               <label class="btn btn-outline-primary" for="btnradio1">1</label>
 
-                              <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                              <input type="radio" class="btn-check" name="btnradio" value="2" id="btnradio2"
+                                 autocomplete="off">
                               <label class="btn btn-outline-primary" for="btnradio2">2</label>
 
-                              <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                              <input type="radio" class="btn-check" name="btnradio" value="3" id="btnradio3"
+                                 autocomplete="off">
                               <label class="btn btn-outline-primary" for="btnradio3">3</label>
 
-                              <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+                              <input type="radio" class="btn-check" name="btnradio" value="4" id="btnradio4"
+                                 autocomplete="off">
                               <label class="btn btn-outline-primary" for="btnradio4">4</label>
 
-                              <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off">
+                              <input type="radio" class="btn-check" name="btnradio" value="5" id="btnradio5"
+                                 autocomplete="off">
                               <label class="btn btn-outline-primary" for="btnradio5">5</label>
                            </div>
                         </div>
-
                         <div class="offers-label">
-                           <p data-bs-toggle="modal" data-bs-target="#exampleModalnew"><b>25% Off Forever</b></p>
+                           <p data-bs-toggle="modal" data-bs-target="#exampleModalnew">
+                              <b><span id="offerPrcnt"></span>% Off Forever</b>
+                           </p>
                         </div>
 
                         <div class="optin-list">
                            <div class="col d-flex align-items-start mb-1">
                               <div class="icon-square flex-shrink-0 me-2"><i class="fas fa-check"></i></div>
-                              <div>
-                                 <p id="pack-info"><del>$66.99</del> <b>$49.24</b> per kid | $1.76 per day</p>
+                              <div class="disFlex">
+                                 <p id="pack-info"><del>$66.99</del></p>
+                                 <p>$<span id="price-perKid"></span> per kid |</p>
+                                 <p>$<span id="price-perDay"></span> per day</p>
                               </div>
                            </div>
                            <div class="col d-flex align-items-start mb-1">
@@ -522,8 +531,9 @@
                            </div>
                            <div class="col d-flex align-items-start mb-1">
                               <div class="icon-square flex-shrink-0 me-2"><i class="fas fa-check"></i></div>
-                              <div>
-                                 <p id="pack-info">56 packs every 4 weeks (336 gummies)</p>
+                              <div class="disFlex">
+                                 <p><span id="perPack"></span> packs every 4 weeks</p>
+                                 <p>(<span id="perPack-gummies"></span> gummies)</p>
                               </div>
                            </div>
 
@@ -532,8 +542,82 @@
                            <div class="btn d-block btn-danger">Start Now</div>
                         </div>
                      </div>
-                     <!-- Try Once -->
 
+                     <!-- Sugar Free Box -->
+                     <div class="freeSugar hide">
+                        <h4>AutoShip & Save</h4>
+                        <h3>How many kids?</h3>
+                        <div class="mounth-tabs">
+                           <div class="btn-group nav-fill w-100" role="group">
+                              <input type="radio" class="btn-check" name="btnradio2" value="1" id="btnradio6"
+                                 autocomplete="off" checked>
+                              <label class="btn btn-outline-primary" for="btnradio6">1</label>
+
+                              <input type="radio" class="btn-check" name="btnradio2" value="2" id="btnradio7"
+                                 autocomplete="off">
+                              <label class="btn btn-outline-primary" for="btnradio7">2</label>
+
+                              <input type="radio" class="btn-check" name="btnradio2" value="3" id="btnradio8"
+                                 autocomplete="off">
+                              <label class="btn btn-outline-primary" for="btnradio8">3</label>
+
+                              <input type="radio" class="btn-check" name="btnradio2" value="4" id="btnradio9"
+                                 autocomplete="off">
+                              <label class="btn btn-outline-primary" for="btnradio9">4</label>
+
+                              <input type="radio" class="btn-check" name="btnradio2" value="5" id="btnradio10"
+                                 autocomplete="off">
+                              <label class="btn btn-outline-primary" for="btnradio10">5</label>
+                           </div>
+                        </div>
+                        <div class="offers-label">
+                           <p data-bs-toggle="modal" data-bs-target="#exampleModalnew">
+                              <b><span id="offerPrcnt2"></span>% Off Forever</b>
+                           </p>
+                        </div>
+
+                        <div class="optin-list">
+                           <div class="col d-flex align-items-start mb-1">
+                              <div class="icon-square flex-shrink-0 me-2"><i class="fas fa-check"></i></div>
+                              <div class="disFlex">
+                                 <p id="pack-info"><del>$66.99</del></p>
+                                 <p>$<span id="price-perKid2"></span> per kid |</p>
+                                 <p>$<span id="price-perDay2"></span> per day</p>
+                              </div>
+                           </div>
+                           <div class="col d-flex align-items-start mb-1">
+                              <div class="icon-square flex-shrink-0 me-2"><i class="fas fa-check"></i></div>
+                              <div>
+                                 <p id="pack-info">30-day money back guarantee</p>
+                              </div>
+                           </div>
+                           <div class="col d-flex align-items-start mb-1">
+                              <div class="icon-square flex-shrink-0 me-2"><i class="fas fa-check"></i></div>
+                              <div>
+                                 <p id="pack-info">Pause or cancel anytime</p>
+                              </div>
+                           </div>
+                           <div class="col d-flex align-items-start mb-1">
+                              <div class="icon-square flex-shrink-0 me-2"><i class="fas fa-check"></i></div>
+                              <div>
+                                 <p id="pack-info">FREE avg 2-day shipping today</p>
+                              </div>
+                           </div>
+                           <div class="col d-flex align-items-start mb-1">
+                              <div class="icon-square flex-shrink-0 me-2"><i class="fas fa-check"></i></div>
+                              <div class="disFlex">
+                                 <p><span id="perPack2"></span> packs every 4 weeks</p>
+                                 <p>(<span id="perPack-gummies2"></span> gummies)</p>
+                              </div>
+                           </div>
+
+                        </div>
+                        <div class="start">
+                           <div class="btn d-block btn-danger">Start Now</div>
+                        </div>
+                     </div>
+
+                     <!-- Try Once -->
                      <div class="tastelike mb-4">
                         <h3>Taste like</h3>
                         <div class="d-flex justify-content-center gap-5">
@@ -1472,11 +1556,14 @@
       </div>
    </div>
    <!-- Popup-modul -->
-
    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
    <script src='https://unpkg.com/swiper@6.5.4/swiper-bundle.min.js'></script>
    <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script>
+
+   <!-- Import Scripts -->
    <script src="js/script.js"></script>
+   <script src="js/index.js" type="module"></script>
+
    <script type="text/javascript">
       const triggerTabList = document.querySelectorAll('#myTab button')
       triggerTabList.forEach(triggerEl => {
@@ -1556,7 +1643,6 @@
             icon.src = 'images/play.png';
          });
       });
-
 
       // Choose Your Offers Function
       // document.addEventListener("DOMContentLoaded", function () {
