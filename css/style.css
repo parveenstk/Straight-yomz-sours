@@ -105,6 +105,7 @@ ul {
     display: block;
 }
 
+
 .freeSugar {
     padding: 20px;
     border: 1.5px solid #000;
@@ -140,7 +141,12 @@ ul {
     font-size: 13px;
     word-spacing: 3px;
 }
-
+.top-header strong{    -webkit-text-stroke: 0px black;}
+b, strong {
+    font-weight: bolder;
+    font-weight: 900;
+    -webkit-text-stroke: 0.5px black;
+}
 .sticky-top {
     background: #1EB9F0;
 }
@@ -1030,6 +1036,8 @@ left: 10px;*/
 .red-color {
     color: #E6193C;
 }
+
+.red-color strong{ -webkit-text-stroke: 0.5px #E6193C;}
 
 .olympians-details p {
     margin-bottom: 5px;
