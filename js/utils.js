@@ -1,15 +1,9 @@
-function hideToast() {
-    const toast = document.querySelector('.toster');
-    toast.classList.add('hide');
-}
+// on press "/" it focus on 'first name input'
 
-function showToast() {
-    const toast = document.querySelector('.toster');
-    toast.classList.remove('hide');
-    // Auto-hide after 3 seconds
-    setTimeout(() => {
-        hideToast();
-    }, 3000);
-}
+document.addEventListener('DOMContentLoaded', () => {
+    const firstName = document.getElementById('first-name');
 
-export { hideToast, showToast };
+    document.addEventListener('keydown', (event) => {
+        event.key === '/' && (event.preventDefault(), firstName.focus())
+    });
+});
