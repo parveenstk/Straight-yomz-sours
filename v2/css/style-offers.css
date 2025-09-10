@@ -1,0 +1,738 @@
+@font-face {
+    font-family: "Super Caramel";
+    src: url("../font/SuperCaramel.woff2") format("woff2"), url("../font/SuperCaramel.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Century Gothic';
+    src: url('../font/CenturyGothic-Bold.woff2') format('woff2'), url('../font/CenturyGothic-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Century Gothic';
+    src: url('../font/CenturyGothic-Bold.woff2') format('woff2'), url('../font/CenturyGothic-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'century_gothic_paneuropeanRg';
+    src: url('../font/centurygothicpaneuropeanregular-webfont.woff2') format('woff2'), url('../font/centurygothicpaneuropeanregular-webfont.woff') format('woff'), url('../font/centurygothicpaneuropeanregular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'century_gothic_paneuropeanLt';
+    src: url('../font/centurygothicpaneuropeanlight-webfont.woff2') format('woff2'), url('../font/centurygothicpaneuropeanlight-webfont.woff') format('woff'), url('../font/centurygothicpaneuropeanlight-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'century_gothic_paneuropeanXBd';
+    src: url('../font/centurygothicpaneuropeanextrabold-webfont.woff2') format('woff2'), url('../font/centurygothicpaneuropeanextrabold-webfont.woff') format('woff'), url('../font/centurygothicpaneuropeanextrabold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'century_gothic_paneuropean_Rg';
+    src: url('../font/centurygothicpaneuropeansemibold-webfont.woff2') format('woff2'),
+        url('../font/centurygothicpaneuropeansemibold-webfont.woff') format('woff'),
+        url('../font/centurygothicpaneuropeansemibold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1);
+    /* turns white to black */
+}
+
+.exblod {
+    font-family: 'century_gothic_paneuropeanXBd';
+}
+
+h1,
+h2 {
+    /* font-family: 'Super Caramel';*/
+    font-family: "Super Caramel";
+}
+
+body {
+    font-family: 'century_gothic_paneuropean_Rg';
+    font-weight: normal;
+    font-style: normal;
+}
+
+.top-header img {
+    width: 10%;
+    display: block;
+    margin: 0px auto;
+}
+
+.top-header {
+    box-shadow: 0 0px 0px 0px #e9e4dd inset;
+    background-color: #ffffff;
+    padding: 10px 0;
+}
+
+.offer2-heading span {
+    display: block;
+}
+
+.inner-ofr-content h3 {
+    font-size: 32px;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 0px 0 20px;
+}
+
+.inner-ofr-content {
+    background: #ffffff;
+    padding: 20px;
+}
+
+.step-pd .col-4 {
+    text-align: center;
+    font-size: 18px;
+    line-height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.step-pd .col-4 p {
+    margin-bottom: 0px;
+}
+
+.comman-color {
+    background-color: #dcdcdc;
+    color: #a7a7a7 !important;
+}
+
+.comman-color-1 {
+    text-align: center;
+    font-size: 18px;
+    color: rgb(255, 255, 255) !important;
+    background-color: #000;
+    line-height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.head-1 {
+    font-size: 24px !important;
+    margin-bottom: 0px !important;
+    color: #E6193C;
+}
+
+h3.head-2 {
+    font-size: 42px !important;
+    margin-bottom: 0px !important;
+}
+
+.head-3 {
+    text-align: center;
+}
+
+.ssl img {
+    width: 28%;
+    margin-bottom: 10px;
+}
+
+.ssl {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.manage-footersec {
+    text-align: center;
+}
+
+.manage-footersec p {
+    font-size: 12px;
+}
+
+.copyright-text {
+    font-size: 12px;
+    text-align: center;
+}
+
+.inner-offer-content {
+    /* Gradient */
+    background: #ecebeb;
+    padding-top: 10px;
+}
+
+.mange-content {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+.red-color {
+    color: #e74c3c;
+    font-weight: 700;
+}
+
+.inner-ofr-content .form-select {
+    height: 55px;
+}
+
+.pulse {
+    animation-name: pulse;
+    -webkit-animation-name: pulse;
+    animation-duration: 2.5s;
+    -webkit-animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.9);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0.9);
+    }
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale(0.95);
+    }
+
+    50% {
+        -webkit-transform: scale(1);
+    }
+
+    100% {
+        -webkit-transform: scale(0.95);
+    }
+}
+
+.checkout-btn .btn {
+    width: 100%;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 47px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #1EB9F0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 28px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 600;
+    font-size: 34px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 600;
+    padding: 19px 30px;
+    border: 0px solid #000 ! IMPORTANT;
+    background: linear-gradient(88deg, #fff689 0%, #FFEB00 100%);
+}
+
+.checkout-btn .btn:hover{ background: #1eb9f0;
+    color: #fff;}
+
+.oder-wd {
+    width: 40%;
+    margin: 30px auto;
+    display: block;
+}
+
+.expedit {
+    width: 60%;
+    margin: 30px auto;
+    display: block;
+}
+
+.trust {
+    color: black !important;
+    width: 320px !important;
+    margin-top: 20px;
+    margin: 30px auto;
+}
+
+.tagview {
+    color: #000;
+}
+
+.footer {
+    background: #f1f4f8;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.heading-information {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.heading-information p {
+    margin-bottom: 2px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.footer p {
+    font-weight: 500;
+}
+
+.step-pd {
+    display: flex;
+}
+
+.inner-offer-content-2 {
+    background: #fff;
+}
+
+.gray-pd {
+    background-color: #e8e8e8;
+    padding: 15px 20px;
+    border-radius: 5px;
+}
+
+.gray-pd p {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+
+.gray-pd p i {
+    margin-right: 10px;
+}
+
+.last-mail-formating {
+    margin: 20px 0;
+}
+
+.last-mail-formating img {
+    width: 70px;
+    margin-right: 30px
+}
+
+.last-mail-formating p {
+    margin-bottom: 0px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.offerpop .modal-content {
+    width: 730px;
+    background: #fff;
+    border: 3px dashed #E6193C;
+    text-align: center;
+    margin-left: 50px;
+}
+
+.offerpop .modal-body {
+    padding: 40px 40px 45px;
+}
+
+.offerpop h4 {
+    height: auto;
+    text-align: center;
+    font-size: 26px;
+    color: #000000;
+    font-weight: 700;
+}
+
+.offerpop p {
+    font-size: 16px;
+    text-align: center;
+    color: #222;
+    font-weight: 700;
+}
+
+.othanks {
+    text-decoration: underline;
+    color: #333;
+}
+
+.font-weight-bold {
+    font-style: initial !important;
+}
+
+.offerpop .managecheckoutbtn {
+    white-space: normal;
+    font-size: 22px;
+    background: #1EB9F0;
+    color: #000;
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    padding: 16px;
+    width: 66%;
+    margin: 0px auto;
+    margin-bottom: 5px;
+    font-family: 'century_gothic_paneuropeanXBd';
+    border-radius: 50px;
+background: linear-gradient(88deg, #fff689 0%, #FFEB00 100%);
+}
+
+.offerpop .managecheckoutbtn:hover {
+ background: #1eb9f0;
+    color: #fff;
+   
+}
+
+.pulse {
+    animation-name: pulse;
+    -webkit-animation-name: pulse;
+    animation-duration: 1.5s;
+    -webkit-animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(.9)
+    }
+
+    50% {
+        transform: scale(1)
+    }
+}
+
+@-webkit-keyframes pulse {
+
+    0%,
+    100% {
+        -webkit-transform: scale(.95)
+    }
+
+    50% {
+        -webkit-transform: scale(1)
+    }
+}
+
+/*NewDownsell-style*/
+.yellow-text {
+    color: #FFEB00;
+    background: #E6193C;
+    font-weight: 700;
+    display: inline-block;
+    padding: 8px;
+    font-size: 49px;
+    margin-bottom: 10px !important;
+}
+
+.mideel-text {
+    font-size: 32px;
+}
+
+.linebrack {
+    display: block;
+}
+
+.min-text {
+    font-size: 22px;
+
+}
+
+.color-red {
+    color: #E6193C;
+}
+
+#timer-box {
+    #timer-display {
+        text-align: center !important;
+        font-size: 38px !important;
+        color: #e6193c !important;
+        font-weight: 700 !important;
+        font-family: 'century_gothic_paneuropeanXBd';
+
+        #timer-text {
+            color: black !important;
+            font-size: 18px;
+            display: block;
+        }
+    }
+}
+
+/*NewDownsell-style*/
+
+@media screen and (max-width: 1412px) {
+    .checkout-btn {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1210px) {
+
+    .muid-size-area {
+        width: 90% !important;
+    }
+
+    .offers-banners {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 991px) {
+
+    .inner-offer-content .container {
+        width: 98% !important;
+        max-width: 98% !important;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    .checkout-btn {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    .thank-data {
+        background: #fff;
+        padding: 45px 20px;
+        box-shadow: 0px 2px 10px #ccc;
+        border-radius: 10px;
+        border: 1px solid #ccc;
+    }
+
+    .offerpop .modal-content {
+        width: 1150px !important;
+        background: #fff;
+        text-align: center;
+        margin-left: 0px;
+    }
+
+    .offerpop .managecheckoutbtn {
+        white-space: normal;
+        font-size: 18px;
+        width: 100%;
+        display: block;
+        text-decoration: none;
+        padding: 16px;
+        width: 85%;
+        margin: 0px auto;
+        margin-bottom: 5px;
+
+    }
+}
+
+@media (max-width: 767px) {
+
+    .inner-offer-content .container {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .offer2-heading span {
+        display: inline-block;
+    }
+
+    .othanks {
+        font-size: 12px;
+    }
+
+    .offerpop .modal-body {
+        padding: 20px 5px 15px;
+    }
+
+    .checkout-btn .btn {
+        font-size: calc(5.5vw - 0px) !important;
+        line-height: calc(1.9em + 1vw) !important;
+        padding: 3px 10px;
+        display: block;
+        width: 100%;
+    }
+
+    h3.head-2 {
+        font-size: 27px !important;
+        margin-bottom: 0px !important;
+    }
+
+    .head-1 {
+        font-size: 17px !important;
+        margin-bottom: 0px !important;
+        color: #E6193C;
+    }
+
+    .top-header img {
+        width: 24% !important;
+        display: block;
+        margin: 0px auto;
+    }
+
+    .top-header {
+        box-shadow: 0 0px 0px 0px #e9e4dd inset !important;
+        background-color: #fff !important;
+        padding: 15px 0 0px !important;
+    }
+
+    .inner-ofr-content {
+        background: #fff;
+        padding: 15px;
+    }
+
+    .ssl img {
+        width: 68%;
+        margin-bottom: 10px;
+    }
+
+    a.tagview {
+        font-size: 12px;
+        line-height: normal !important;
+        display: inline-block;
+    }
+
+    .manage-footersec {
+        display: block !important;
+    }
+
+    .manage-footersec p {
+        font-size: 12px;
+    }
+
+    .icon-square.flex-shrink-0.me-3 {
+        margin-right: 0px !important;
+        margin-bottom: 10px;
+    }
+
+    .last-mail-formating img {
+        width: 80px;
+        margin-right: 10px;
+    }
+
+    .expedit {
+        width: 100%;
+        margin: 0px auto;
+        display: block;
+    }
+
+    .oder-wd {
+        width: 80%;
+        margin: 30px auto;
+        display: block;
+    }
+
+    .inner-ofr-content h3 {
+
+        font-size: calc(6.5vw - 0px) !important;
+        line-height: calc(0.9em + 1vw) !important;
+        text-transform: capitalize;
+        text-align: center;
+        margin: 0px 0 20px;
+    }
+
+    .footer {
+        background: #f1f4f8;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .footer p {
+        font-weight: 500;
+        font-size: 12px;
+    }
+
+    .mange-content {
+        padding: 0px;
+        font-size: 18px;
+        font-weight: 600;
+        margin: 10px 0;
+    }
+
+    .inner-offer-content {
+        background: #f1f4f8;
+        padding-top: 0px;
+    }
+
+    .top-header img {
+        width: 50%;
+        display: block;
+        margin: 0px auto;
+    }
+
+    .top-header {
+        box-shadow: 0 -4px 1px 2px #e9e4dd inset;
+        background-color: #fff;
+        padding: 10px 0 15px;
+    }
+
+    .muid-size-area {
+        width: 96% !important;
+    }
+
+    .bl-block {
+        display: block !important;
+    }
+
+    .step-pd .col-4 {
+        text-align: center;
+        font-size: 14px;
+        line-height: 14px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .step-pd {
+        margin-top: 10px;
+    }
+
+    .head-3 {
+        font-size: calc(3.5vw - 0px) !important;
+        line-height: calc(0.9em + 1vw) !important;
+        line-height: normal;
+        margin-top: 5px;
+    }
+
+    .offerpop h4{font-size: 26px;}
+}
+
+@media (max-width: 410px) {
+.offerpop h4{font-size: 23px;}
+}
+
+@media (max-width: 360px) {
+    .offerpop .managecheckoutbtn{width: 99%;}
+
+        .offerpop h4 {
+        font-size: 21px;
+    }
+    .step-pd .col-4 {
+        font-size: 12px;
+    }
+    .checkout-btn .btn {
+        font-size: calc(4.5vw - 0px) !important;
+        line-height: calc(1.9em + 1vw) !important;
+    }
+
+}

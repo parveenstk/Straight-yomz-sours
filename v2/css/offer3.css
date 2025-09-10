@@ -1,0 +1,1082 @@
+@font-face {
+    font-family: "Super Caramel";
+    src: url("../font/SuperCaramel.woff2") format("woff2"), url("../font/SuperCaramel.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Century Gothic';
+    src: url('../font/CenturyGothic-Bold.woff2') format('woff2'), url('../font/CenturyGothic-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Century Gothic';
+    src: url('../font/CenturyGothic-Bold.woff2') format('woff2'), url('../font/CenturyGothic-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'century_gothic_paneuropeanRg';
+    src: url('../font/centurygothicpaneuropeanregular-webfont.woff2') format('woff2'), url('../font/centurygothicpaneuropeanregular-webfont.woff') format('woff'), url('../font/centurygothicpaneuropeanregular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'century_gothic_paneuropeanLt';
+    src: url('../font/centurygothicpaneuropeanlight-webfont.woff2') format('woff2'), url('../font/centurygothicpaneuropeanlight-webfont.woff') format('woff'), url('../font/centurygothicpaneuropeanlight-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'century_gothic_paneuropeanXBd';
+    src: url('../font/centurygothicpaneuropeanextrabold-webfont.woff2') format('woff2'), url('../font/centurygothicpaneuropeanextrabold-webfont.woff') format('woff'), url('../font/centurygothicpaneuropeanextrabold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'century_gothic_paneuropean_Rg';
+    src: url('../font/centurygothicpaneuropeansemibold-webfont.woff2') format('woff2'),
+        url('../font/centurygothicpaneuropeansemibold-webfont.woff') format('woff'),
+        url('../font/centurygothicpaneuropeansemibold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1);
+    /* turns white to black */
+}
+
+.exblod {
+    font-family: 'century_gothic_paneuropeanXBd';
+}
+
+h1,
+h2 {
+    /* font-family: 'Super Caramel';*/
+    font-family: "Super Caramel";
+}
+
+body {
+    font-family: 'century_gothic_paneuropean_Rg';
+    font-weight: normal;
+    font-style: normal;
+}
+
+.top-header img {
+    width: 10%;
+    display: block;
+    margin: 0px auto;
+}
+
+.top-header {
+    box-shadow: 0 0px 0px 0px #e9e4dd inset;
+    background-color: #ffffff;
+    padding: 10px 0;
+}
+
+.inner-ofr-content h3 {
+    font-size: 32px;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 0px 0 20px;
+}
+
+.inner-ofr-content {
+    background: #fff;
+    padding: 20px;
+}
+
+.step-pd .col-4 {
+    text-align: center;
+    font-size: 18px;
+    line-height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.step-pd .col-4 p {
+    margin-bottom: 0px;
+}
+
+.comman-color {
+    background-color: #dcdcdc;
+    color: #a7a7a7 !important;
+}
+
+.comman-color-1 {
+    text-align: center;
+    font-size: 18px;
+    color: #fff !important;
+    background-color: #000;
+    line-height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.head-1 {
+    font-size: 30px !important;
+    margin-bottom: 0px !important;
+    color: #E6193C;
+}
+
+h3.head-2 {
+    font-size: 20px !important;
+    margin-bottom: 20px !important;
+    margin-top: 10px;
+}
+
+.first-heading {
+    text-align: center;
+    padding: 30px 0 0;
+}
+
+.first-heading h3 {
+    color: #1eb9f0;
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 0px;
+}
+
+.first-heading p {
+    color: #1eb9f0;
+    font-weight: 600;
+    margin-bottom: 0px;
+    font-size: 18px;
+}
+
+.secound-heading {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.secound-heading h3 {
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 0px;
+}
+
+.secound-heading p {
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 0px;
+    font-size: 18px;
+}
+
+.head-3 {
+    text-align: center;
+}
+
+.ssl img {
+    width: 28%;
+    margin-bottom: 10px;
+}
+
+.ssl {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.manage-footersec {
+    text-align: center;
+}
+
+.manage-footersec p {
+    font-size: 12px;
+}
+
+.copyright-text {
+    font-size: 12px;
+    text-align: center;
+}
+
+.inner-offer-content {
+    background: #ecebeb;
+    padding-top: 10px;
+}
+
+.mange-content {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+.red-color {
+    color: #e74c3c;
+    font-weight: 700;
+}
+
+.inner-ofr-content .form-select {
+    height: 55px;
+}
+
+.pulse {
+    animation-name: pulse;
+    -webkit-animation-name: pulse;
+    animation-duration: 2.5s;
+    -webkit-animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.9);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0.9);
+    }
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale(0.95);
+    }
+
+    50% {
+        -webkit-transform: scale(1);
+    }
+
+    100% {
+        -webkit-transform: scale(0.95);
+    }
+}
+
+.checkout-btn .btn {
+    width: 100%;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 47px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #1EB9F0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 28px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 600;
+    font-size: 34px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 600;
+    padding: 19px 30px;
+    background: linear-gradient(88deg, #fff689 0%, #FFEB00 100%);
+}
+
+.checkout-btn .btn:hover {
+    background: #1eb9f0;
+    color: #fff;
+}
+
+.checkoutbtnyomz .btn {
+    letter-spacing: 0px;
+    font-size: 27px;
+    padding: 15px 30px;
+}
+
+.border-light{border: 1px solid #f3f3f3 !important;}
+
+.oder-wd {
+    width: 40%;
+    margin: 30px auto;
+    display: block;
+}
+
+.expedit {
+    width: 60%;
+    margin: 30px auto;
+    display: block;
+}
+
+.trust {
+    color: black !important;
+    width: 320px !important;
+    margin-top: 20px;
+    margin: 30px auto;
+}
+
+.tagview {
+    color: #000;
+}
+
+.footer {
+    background: #f1f4f8;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.heading-information {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.heading-information p {
+    margin-bottom: 2px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.footer p {
+    font-weight: 500;
+}
+
+.step-pd {
+    display: flex;
+}
+
+.inner-offer-content-2 {
+    background: #fff;
+}
+
+.gray-pd {
+    background-color: #e8e8e8;
+    padding: 15px 20px;
+    border-radius: 5px;
+}
+
+.gray-pd p {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+
+.gray-pd p i {
+    margin-right: 10px;
+}
+
+.last-mail-formating {
+    margin: 20px 0;
+}
+
+.last-mail-formating img {
+    width: 70px;
+    margin-right: 30px
+}
+
+.last-mail-formating p {
+    margin-bottom: 0px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.offerpop .modal-content {
+    background: #fff;
+    border: 3px dashed #E6193C;
+    text-align: center;
+    width: 84%;
+    margin: 0px auto;
+}
+
+.buttonRight .btn {
+    color: #000;
+    padding: .6em 1.3em;
+    font-weight: bold;
+    font-size: 1.7em;
+    background-color: #1EB9F0;
+    display: inline-block;
+    border: none;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    background: linear-gradient(88deg, #fff689 0%, #FFEB00 100%);
+    text-transform: uppercase;
+    font-family: 'century_gothic_paneuropeanXBd';
+}
+
+.buttonRight .btn:hover {
+    background: #1eb9f0;
+    color: #fff;
+
+}
+
+.downsell1 {
+    padding: 30px 0 !important;
+}
+
+@media screen and (max-width: 1200px) {
+
+    #exitLink,
+    #innerBar {
+        width: 100%
+    }
+
+    #innerBar {
+        margin: 0 auto
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    .buttonRight .btn {
+        white-space: normal;
+        font-size: 18px;
+        width: 100%;
+        display: block;
+        text-decoration: none;
+        padding: 16px;
+        width: 85%;
+        margin: 0px auto;
+        margin-bottom: 5px;
+    }
+
+    .offerpop .modal-content {
+        background: #fff;
+        border: 3px dashed #E6193C;
+        text-align: center;
+        width: 100%;
+        margin: 0px auto;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .selectBox,
+    #subscribebox {
+        width: 100%;
+        height: auto;
+        margin: 0 auto
+    }
+
+    body {
+        overflow-x: hidden
+    }
+
+    #headInner {
+        width: 98%;
+        height: 46px
+    }
+
+    #headLogo {
+        height: 36px
+    }
+
+    .mainBox {
+        width: 97%
+    }
+
+    .mainBg {
+        width: 100%
+    }
+
+    .mainHeadbox {
+        font-size: 12px
+    }
+
+    .headText {
+        width: 95%;
+        font-size: 16px
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .mainBox {
+        width: 97%;
+        padding: 10px
+    }
+
+    #leavePop2 {
+        width: 94%;
+        top: 10%;
+        left: calc(3% - 3px)
+    }
+
+    #popButton {
+        width: 95%
+    }
+
+    .buttonRight input#productIdInput {
+        width: 100% !important
+    }
+}
+
+#innerBar,
+.mainBox,
+.popText,
+.popTitle {
+    margin: 0 auto
+}
+
+#exitLink,
+.inputButton,
+.mainBg {
+    margin: 25px auto 0
+}
+
+.inputButton {
+    text-align: center;
+}
+
+.inputButton .btn {
+    border: thin outset black;
+    color: #FFEB00;
+    padding: .75em 3.5em;
+    font-weight: bold;
+    font-size: 1.6em;
+    background-color: #E6193C;
+    display: inline-block;
+    border: none;
+    border-radius: 10px;
+}
+
+.inputButton .btn:hover {
+    background-color: #d61233;
+    color: #FFEB00;
+}
+
+#leaveFade,
+#leaveFade2 {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 950;
+    background: rgba(0, 0, 0, .7);
+    display: none
+}
+
+#leavePop2 {
+    width: 650px;
+    height: auto;
+    position: fixed;
+    top: 25%;
+    left: calc(50% - 325px);
+    z-index: 1000;
+    border: 3px dashed #f06522;
+    display: none;
+    padding-top: 35px;
+    padding-bottom: 60px;
+    text-align: center
+}
+
+.popTitle {
+    font-size: 35px;
+    color: #000;
+    line-height: normal;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.popText {
+    font-size: 20px;
+    color: #222;
+    line-height: normal;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#popButton {
+    width: 75%;
+    height: auto;
+    margin: 15px auto
+}
+
+a.textLink:link,
+a.textLink:visited {
+    text-decoration: underline;
+    color: #333
+}
+
+.shiptake {
+    text-align: center;
+    padding: 10px
+}
+
+#timer-box {
+
+    margin-top: 18px;
+
+    #timer-display {
+        text-align: center !important;
+        font-size: 38px !important;
+        color: #e6193c !important;
+        font-weight: 700 !important;
+        font-family: 'century_gothic_paneuropeanXBd';
+
+        #timer-text {
+            color: black !important;
+            font-size: 18px;
+            display: block;
+        }
+    }
+}
+
+@media screen and (max-width: 1412px) {
+    .checkout-btn {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1210px) {
+
+    .muid-size-area {
+        width: 90% !important;
+    }
+
+    .offers-banners {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 991px) {
+
+    .inner-offer-content .container {
+        width: 98% !important;
+        max-width: 98% !important;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    .checkout-btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .inner-offer-content .container {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .buttonRight .btn {
+        display: block;
+        width: 100%;
+        margin-bottom: 0px !important;
+        font-size: calc(7vw - 0px) !important;
+        line-height: calc(0.9em + 1vw) !important;
+        padding: .6em 0.3em;
+    }
+
+    #popButton {
+        width: 100%;
+    }
+
+    .offerpop .modal-content {
+        width: 100%;
+    }
+
+    .popTitle {
+        font-size: calc(6.2vw - 0px) !important;
+        line-height: calc(1em + 1vw) !important;
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .popText {
+        font-size: calc(3.5vw - 0px) !important;
+        line-height: calc(1em + 1vw) !important;
+        color: #222;
+        line-height: normal;
+        padding-left: 0px;
+        padding-right: 0px;
+        width: 100%;
+        display: block;
+    }
+
+    #popButton {
+        margin: 15px auto 0px;
+    }
+
+    .checkout-btn .btn {
+        font-size: 19px;
+        padding: 3px 10px;
+        display: block;
+        width: 100%;
+    }
+
+    h3.head-2 {
+        font-size: calc(5.5vw - 0px) !important;
+        line-height: calc(1em + 1vw) !important;
+        margin-bottom: 0px !important;
+
+    }
+
+    .head-1 {
+        font-size: calc(6.5vw - 0px) !important;
+        line-height: calc(1.1em + 1vw) !important;
+        margin-bottom: 0px !important;
+        color: #E6193C;
+        margin-bottom: 5px !important;
+    }
+
+    .top-header img {
+        width: 24% !important;
+        display: block;
+        margin: 0px auto;
+    }
+
+    .top-header {
+        box-shadow: 0 0px 0px 0px #e9e4dd inset !important;
+        background-color: #fff !important;
+        padding: 15px 0 0px !important;
+    }
+
+    .inner-ofr-content {
+        background: #fff;
+        padding: 15px;
+    }
+
+    .ssl img {
+        width: 68%;
+        margin-bottom: 10px;
+    }
+
+    a.tagview {
+        font-size: 12px;
+    }
+
+    .manage-footersec {
+        display: block !important;
+    }
+
+    .manage-footersec p {
+        font-size: 12px;
+    }
+
+    .icon-square.flex-shrink-0.me-3 {
+        margin-right: 0px !important;
+        margin-bottom: 10px;
+    }
+
+    .first-heading {
+        text-align: center;
+        padding: 0px 0 0;
+    }
+
+    .first-heading h3 {
+        margin-bottom: 0px !important;
+    }
+
+    .pd-lr {
+        margin-top: 30px;
+    }
+
+    .pd-lr img {
+        margin-bottom: 20px;
+    }
+
+    .last-mail-formating img {
+        width: 80px;
+        margin-right: 10px;
+    }
+
+    .expedit {
+        width: 100%;
+        margin: 0px auto;
+        display: block;
+    }
+
+    .oder-wd {
+        width: 80%;
+        margin: 30px auto;
+        display: block;
+    }
+
+    .inner-ofr-content h3 {
+        font-size: 25px;
+        text-transform: capitalize;
+        text-align: center;
+        margin: 0px 0 20px;
+    }
+
+    .offer3heading h3 {
+        font-size: 43px;
+    }
+
+    .footer {
+        background: #f1f4f8;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .footer p {
+        font-weight: 500;
+        font-size: 12px;
+    }
+
+    .mange-content {
+        padding: 0px;
+        font-size: 18px;
+        font-weight: 600;
+        margin: 10px 0;
+    }
+
+    .inner-offer-content {
+        background: #f1f4f8;
+        padding-top: 0px;
+    }
+
+    .top-header img {
+        width: 50%;
+        display: block;
+        margin: 0px auto;
+    }
+
+    .top-header {
+        box-shadow: 0 -4px 1px 2px #e9e4dd inset;
+        background-color: #fff;
+        padding: 10px 0 15px;
+    }
+
+    .muid-size-area {
+        width: 96% !important;
+    }
+
+    .bl-block {
+        display: block !important;
+    }
+
+    .step-pd .col-4 {
+        text-align: center;
+        font-size: 14px;
+        line-height: 14px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .step-pd {
+        margin-top: 10px;
+    }
+
+    .offerpop h4 {
+        font-size: 26px;
+    }
+
+    .offer-2modalbox .popTitle {
+        font-size: 28px !important;
+    }
+
+    .offer-2modalbox .popText {
+        font-size: 20px !important;
+    }
+
+    .offerpop .modal-content {
+        width: 100%;
+        padding: 15px !important;
+    }
+
+    .offer-2modalbox .buttonRight .btn {
+        font-size: 28px !important;
+    }
+
+    .secound-heading.offer3heading2 h3 {
+        margin: 0px 0 0px;
+    }
+
+    .checkoutbtnyomz .btn {
+        letter-spacing: 0px;
+        font-size: 24px;
+        padding: 10px 30px;
+        line-height: normal;
+    }
+
+    .checkoutbtnyomz .block {
+        display: block;
+    }
+
+}
+
+@media screen and (max-width: 567px) {
+
+    .buttonRight .btn {
+
+        margin-bottom: 0px !important;
+        font-size: calc(7.5vw - 0px) !important;
+    }
+
+    .centerHead,
+    #innerBar,
+    .leftHead,
+    .pricingText,
+    #pricingText2,
+    .rightHead {
+        width: 100%
+    }
+
+    img.logo {
+        margin: 0 auto;
+        display: block
+    }
+
+    a.textLink {
+        font-size: 10px;
+    }
+
+    .offer-2modalbox .popTitle {
+        font-size: 26px !important;
+    }
+
+    .offer-2modalbox .popText {
+        font-size: 18px !important;
+    }
+
+}
+
+.pulse {
+    animation-name: pulse;
+    -webkit-animation-name: pulse;
+    animation-duration: 1.5s;
+    -webkit-animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(.9)
+    }
+
+    50% {
+        transform: scale(1)
+    }
+}
+
+@-webkit-keyframes pulse {
+
+    0%,
+    100% {
+        -webkit-transform: scale(.95)
+    }
+
+    50% {
+        -webkit-transform: scale(1)
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    .step-pd .col-4 {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .offer-2modalbox .buttonRight .btn {
+        font-size: 24px !important;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    .offer-2modalbox .popTitle {
+        font-size: 24px !important;
+    }
+
+    .offer-2modalbox .popText {
+        font-size: 16px !important;
+    }
+
+}
+
+@media screen and (max-width: 405px) {
+    .offerpop .modal-content {
+        width: 100%;
+        padding: 12px !important;
+    }
+
+}
+
+@media screen and (max-width: 380px) {
+
+    .offer3heading h3 {
+        font-size: 40px;
+    }
+
+    .offer-2modalbox .buttonRight .btn {
+        font-size: 22px !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+    .mainHeadbox .col-4 {
+        font-size: 10px !important;
+        line-height: normal !important;
+        padding: 4px 2px;
+    }
+
+    .leftHead,
+    .rightHead,
+    .centerHead {
+        height: 35px;
+    }
+
+    .popText {
+        font-size: 13px;
+        color: #222;
+        line-height: normal;
+    }
+
+    .checkout-btn .btn {
+        font-size: 17px;
+    }
+
+    .offer-2modalbox .popTitle {
+        font-size: 22px !important;
+    }
+
+    .offer-2modalbox .popText {
+        font-size: 14px !important;
+    }
+
+    .offer-2modalbox .buttonRight .btn {
+        font-size: 22px !important;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+}
+
+@media screen and (max-width: 351px) {
+
+    .offer-2modalbox .buttonRight .btn {
+        font-size: 20px !important;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+}
+
+@media screen and (max-width: 326px) {
+
+    .offer-2modalbox .buttonRight .btn {
+        font-size: 18px !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+}
