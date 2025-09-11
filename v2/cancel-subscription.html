@@ -82,15 +82,18 @@
                             <!-- First Name Input -->
                             <div class="col-md-6">
                                 <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="first-name" placeholder="First Name" autocomplete="first-name">
+                                    <input type="text" class="form-control" id="first-name" placeholder="First Name"
+                                        autocomplete="first-name" maxlength="10">
                                     <label for="first-name">First Name</label>
+                                    <p id="first-name-error" class="error-message-cancel hide"></p>
                                 </div>
                             </div>
 
                             <!-- Last Name Input -->
                             <div class="col-md-6">
                                 <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="last-name" placeholder="Last Name">
+                                    <input type="text" class="form-control" id="last-name" placeholder="Last Name"
+                                        maxlength="10">
                                     <label for="last-name">Last Name</label>
                                 </div>
                             </div>
@@ -99,25 +102,29 @@
                             <div class="col-md-12">
                                 <div class="form-floating mb-3">
                                     <input type="email" class="form-control" id="email-address"
-                                        placeholder="Email address">
+                                        placeholder="Email address" maxlength="20">
                                     <label for="email-address">Email address</label>
+                                    <p id="email-address-error" class="error-message-cancel hide"></p>
                                 </div>
                             </div>
 
                             <!-- Phone Number Input -->
                             <div class="col-md-12">
                                 <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="phone-number"
-                                        placeholder="Phone Number">
+                                    <input type="text" class="form-control" id="phone-number" placeholder="Phone Number"
+                                        maxlength="15">
                                     <label for="phone-number">Phone Number</label>
+                                    <p id="phone-number-error" class="error-message-cancel hide"></p>
                                 </div>
                             </div>
 
                             <!-- Order ID Input -->
                             <div class="col-md-12">
                                 <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="order-id" placeholder="Order ID">
+                                    <input type="text" class="form-control" id="order-id" placeholder="Order ID"
+                                        maxlength="25">
                                     <label for="order-id">Order ID</label>
+                                    <p id="order-id-error" class="error-message-cancel hide"></p>
                                 </div>
                             </div>
 
@@ -125,7 +132,7 @@
                             <div class="col-md-12">
                                 <div class="form-floating mb-3">
                                     <textarea class="form-control" placeholder="Leave a comment here" id="comments-box"
-                                        style="height: 150px"></textarea>
+                                        style="height: 150px; max-height: 200px; overflow-y: auto;"></textarea>
                                     <label for="comments-box">Comments</label>
                                 </div>
                             </div>
@@ -155,12 +162,12 @@
                         <form class="row g-3">
                             <!-- First Name -->
                             <div class="col-md-6">
-                                <input type="name" class="form-control" id="first-name" placeholder="First Name"
+                                <input type="name" class="form-control" id="first-name-footer" placeholder="First Name"
                                     autocomplete="true">
                             </div>
                             <!-- Email -->
                             <div class="col-md-6">
-                                <input type="email" class="form-control" name="Straight Data" id="email-address"
+                                <input type="email" class="form-control" name="Straight Data" id="email-address-footer"
                                     placeholder="Email">
                             </div>
                             <div class="col-12">
